@@ -1,0 +1,28 @@
+{{>header}}
+
+<body>
+     {{>topBar}}
+    <input type="hidden" id="playlistId" value="{{playlistId}}">
+     <div id="mainContent" style="margin-top:10vh;">
+          <span class="menuBar" style=" width:30vw;  float:left">
+               {{>head}}
+          </span>
+         <div id="mainContent_2" style="float:left">
+         
+         </div>
+          <span id="byrkinafaso" style=" display:block; width:50vw; float:left;">
+               <div id="app" style="float:left">
+                    &nbsp
+                    &nbsp;
+               </div>
+               <div id="buttonsDiv" style="float:left;width:100%;">
+               <div style=" display:table; width:15vw; margin-left:auto;margin-right:auto;"id="buttonsDIVIUS" >
+               <button id="prevButton" class="Button" style="border-radius: 10px; border:none;">prev</button>
+               <button id="nextButton" class="Button" style="border-radius: 10px; border:none;">next</button>
+          </span>
+     </div>
+
+     <script src="/javascripts/userPhoto.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+     <script defer src='/javascripts/selectedPlaylist.js'></script>
+</body>

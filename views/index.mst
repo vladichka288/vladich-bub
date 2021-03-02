@@ -1,0 +1,21 @@
+{{>header}}
+<body>
+
+{{>topBar}}
+    <div style="margin-top:10vh;">
+        <span style="float:left"> 
+        {{>head}}
+        </span>
+         <span style="float:left;">
+         <div class="indexText">
+          <h1 class="text">VLA<br>DI<br>CH<br>BUB</h1>
+            
+         </div>
+           
+        </span>
+        </div>
+        
+    
+{{>footer}}
+  <script src="/javascripts/userPhoto.js"></script>
+</body>

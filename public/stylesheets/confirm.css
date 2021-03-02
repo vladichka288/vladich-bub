@@ -1,0 +1,144 @@
+
+  .modal{
+    position: fixed;
+    display: block;
+    top: 20vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width:40vw;
+    height:60vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: white;
+    z-index: 40;
+    ;
+  }
+  .modal_open{
+   
+  }
+  .upd {
+    background-color: black;
+    z-index: 30;
+
+  }
+  .fon{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 30;
+
+    width: 100%;
+    height: 100%;
+    
+    background-color: white;
+    opacity:0.2;
+    ;
+  }
+  .photo{
+      border-radius: 3px;
+      border:3px solid white;
+      background-image: url(../images/caution.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 60vh;
+      width:40vw;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: blue;
+      z-index: 45;
+      ;
+      
+  }
+  .list{
+      width:40vw;
+      height:60vh;
+      background-color: rgba(255,255,255,0.2);
+      display: table;
+      ;
+  }
+  .headCaution{
+   
+      width:40vw;
+      height: 15vh;
+      border-bottom:2px solid rgb(238, 229, 229) ;
+      ;
+  }
+  
+  .mainCaution{ 
+    
+      height: 10vh;
+      font-size: 4vw;
+      text-align: center;   
+      width: 40vw;
+      font-family: 'Hammersmith One', sans-serif;
+      color:rgb(238, 229, 229);
+      border-bottom:2px solid rgb(238, 229, 229) ;
+    
+  }
+  .descCaution{
+    
+    height:20vh;
+   
+    color:rgb(238, 229, 229);
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: 'Sarala', sans-serif;
+    ;
+  }
+  .footerButtons{
+      display: inline-block;
+      position: absolute;
+      bottom:0px;
+      width:40vw;
+      height:15vh;
+      ;
+  }
+.buttons{
+    display: inline-block;
+    width: 18vw;
+    height:10vh;
+    ;
+}
+.Button_nice{
+    margin-top:6vh;
+    float: right;
+    height:5vh;
+    width:15vw;
+    background-color:rgb(214, 182, 123);
+    border-radius: 20px;
+    border: none;
+    font-family: 'Sarala', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.85vh;
+    ;
+
+}
+.updLol{
+  float: left; ;
+}
+.phon{
+    z-index: 30;
+    position: fixed;
+    left: 0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(255,255,255,0.2);
+    visibility: hidden;
+    
+}
+.open{
+    visibility: visible;
+    transition:1s;
+}
+#inputSubmit{
+    display: block;
+    width: 5vw;
+    border-radius: 5px;
+    background-color: white;
+}

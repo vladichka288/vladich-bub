@@ -1,0 +1,57 @@
+.nameInput{
+    width: 30vw;
+    border-radius: 5px;
+    height:4vh;
+    text-align: center; 
+    font-family: 'PT Sans', sans-serif;
+    font-size:2.4vh;
+}
+.error-style{
+    border : 2px solid rgb(191, 9, 48);
+}
+.errorName{
+    line-height:4vh;
+    text-align: center;
+    color: rgb(191, 9, 48); 
+    font-family: 'PT Sans', sans-serif;
+} 
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    text-align: center;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    display: block;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:white;
+    border-radius: 5px;
+}
+.areaDesc{
+    border-radius: 5px;
+    width:30vw;
+
+}
+.Button{
+    margin-top:4vh;
+    display: block;
+    height:4.5vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vw;
+    background-color:rgb(214, 182, 123);
+    border-radius: 20px;
+    border: none;
+    font-family: 'Sarala', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.85vh;
+}
+.areaDesc{
+    font-family: 'Sarala', sans-serif;
+    font-size: 1.85vh;
+}

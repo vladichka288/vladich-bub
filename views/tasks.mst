@@ -1,0 +1,45 @@
+{{>header}}
+<body>
+{{>topBar}}
+    <input type="hidden"  id="userFilter" value="{{userFilter}}">
+    <div style="margin-top:10vh;">
+        <span style="width:30vw;display:block; float:left"> 
+        {{>head}}
+        </span>
+    
+         <span style="float:left" class="app"id="app">
+        <span style="display:inline-block; width:45vw; float:left; ">                
+            <input  type="text" id="inputSearchName" name="name" maxlength=50   style= "width:45vw; height:5vh;border:none;font-size:3vh;margin-bottom:0.4vh;border-radius:0.5vw; font-family: 'Solway', serif; padding-left:0.5vw; " placeholder="Search...">
+        </span>
+        
+        <span style="display:inline-block; margin-top:0.5vh; margin-left:1vw;width:4vw;float:left ">
+            <input type="image" id="searchButton"  src="/images/new_search.svg"  style=" width:3vw; height:5vh">
+        </span>  
+            <div id="mainErrorText" class="mainErrorText">No results found!!!</div>
+            <div id="mainError" class="allVideosPhotoPath"></div>
+        <div id="buttonsDiv" style="float:left;width:100%;">
+        <div style=" display:table; width:15vw; margin-left:auto;margin-right:auto;"id="buttonsDIVIUS" >
+       <button id="prevButton" class="Button" style="border-radius: 10px; border:none;">prev</button>
+       <button id="nextButton" class="Button" style="border-radius: 10px; border:none;">next</button>
+      
+        </div>
+        </div>     
+       
+        </span>
+
+    </div>    
+        
+   
+    
+   
+    <div id="html_text"> </div> 
+
+    
+     
+ 
+     {{>footer}}
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <script  src='/javascripts/browser-app.js'></script>
+    <script src="/javascripts/userPhoto.js"></script>
+
+</body>

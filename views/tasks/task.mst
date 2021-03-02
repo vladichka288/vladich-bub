@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+ 
+  
+        <meta charset="utf-8">
+        <title>{{Name}}</title>
+        <meta name="description" content="MY FIRST SITE DESCRIPTION">
+        <meta name="author" content="MY NAME">
+        <link type="text/css" href="/stylesheets/main.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link type="text/css" href="/stylesheets/user_entites.css" rel="stylesheet" />
+        <link type="text/css" href="/stylesheets/createNewVideo.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Quicksand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sarala&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+        <link type="text/css" href="/stylesheets/confirm.css" rel="stylesheet" />
+        <link type="text/css" href="/stylesheets/createNewVideo.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Hammersmith+One|Patua+One&display=swap"
+                rel="stylesheet">
+                 <meta charset="utf-8"> 
+        <link rel="stylesheet" href="/stylesheets/fontsWeb/css/all.min.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/stylesheets/myVideos.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+     <link href="/stylesheets/allvideos.css" rel="stylesheet">
+     <link href="/stylesheets/normalize.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+     <link href="/stylesheets/selectedVideo.css" rel="stylesheet">
+     <link href="/stylesheets/viewsUsers.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+     <link href="/stylesheets/head.css" rel="stylesheet">
+    
+
+</head>
+<body>   
+{{>topBar}}
+<div class="mainTaskContainer">
+        <span class="menuBar">
+        {{>head}}
+        </span>
+          <span id="byrkinafaso">
+            <div><div class="nameText">{{Name}}</div><button class="ButtonAdd" onclick="window.location.href='/addVideoToPlayList?videoId={{_id}}' " id="addToPlaylist">Add to playlist </button></div>
+                <video src = "{{Video}}" class ="videoDescription" controls  alt="lol"></video> 
+                <div  class="videoDescriptionBlock">  
+                        <span  class="VideoDate"> {{Date}}</span>
+                        <span id="viewsCounter" class="counViews" > {{views}} views</span>
+                </div>
+                <div class="authorField">
+                        <span class="authorPhoto" style="background-image:url({{photoUrl}});cursor:pointer;" onclick="window.location.href='/userPage?userId={{authorId}}'">
+                        </span>
+                        <span class="authorNameVideo">
+                                <div class="authorName">
+                                        {{authorName}}
+                                </div>
+
+                        <span>
+                </div>
+                <div class="descriptionText">{{Description}}</div>
+                <div style="height:5vh;">&nbsp</div>
+              
+          </span>
+     
+     
+</div>
+<div class="phon" id="phoneViews">
+        <input  id="videoId" type="hidden" value="{{_id}}">
+        <span class="viewersBlock" id="viewersBlock">
+
+        </span>
+</div>
+    
+  <form action=""  method="post" class="float:left;" id="formDelete"enctype="multipart/form-data">
+    <input type="submit" id="inputSubmit" value="delete" style="display:{{display}};">
+  </form>
+
+
+  <div class="phon" id="phon">
+   <div id="jsModal" class="modal">
+                <div class="photo">
+                        <div class="list">
+                                <div class="headCaution">
+                                        <div class="mainCaution">Are you sure ?</div>
+                                        <div class="descCaution">There will be no opportunity to return what was lost
+                                        </div>
+                                </div>
+
+                                <div class="footerButtons">
+                                        <span class="buttons updLol">
+                                                <button class="Button_nice" id="butConf">Ok</button>
+                                        </span>
+                                        <span class="buttons ">
+                                                <button class="Button_nice" id="butReject">Cancel</button>
+                                        </span>
+                                </div>
+                        </div>
+                </div>
+        </div>
+      </div>
+  
+  {{>footer}} 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+  <script src="/javascripts/delete.js"></script>
+   <script src="/javascripts/userPhoto.js"></script>
+   <script defer src="/javascripts/viewers.js"></script>
+  </body>

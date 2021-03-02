@@ -1,0 +1,116 @@
+.viewersBlock {
+    text-overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    display: block;
+    position:fixed;
+    left:40vw;
+    top:30vh;
+    padding-left:0vh;
+    width : 32vh;
+    height : 40vh;
+    background-color: white;
+    overflow-y: scroll;
+    z-index: 100;
+    border-radius: 10px;
+   
+}
+.viewPart{
+    display:table-cell;
+    width: 100%;
+    min-height: 6vh;
+    max-height: 6vh;
+    border-bottom: 1px solid gray;
+    vertical-align: middle;;
+    text-overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+.viewerPhoto{
+    float : left;
+    width: 6vh;
+    height:6vh;
+    border-radius: 50%;
+    background-image: url(../images/userPgoto.jpg);
+    border: 1.5px solid red;
+    margin-right: 1vw;
+    margin-left:0.5vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.viewerDesc{
+    float: left;
+    width:19vh;
+    height: 6vh;
+}
+.viewerName{
+    width:19vh;
+    height: 2vh;
+    color:black;
+    font-size: 20px;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+.viewDate{
+    width:19vh;
+    height: 2vh;
+    margin-top:2vh;
+    color: rgb(165,153,153);
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+}
+
+.mainPa{
+    display:table;
+    width: 100%;
+    min-height: 8vh;
+    max-height: 8vh;
+    border-bottom: 1px solid gray;
+    
+}
+.viewComponent{
+    cursor: pointer;
+
+}
+.viewerPhoto:hover{
+    transform: scale(1.0.5);
+    box-shadow:2px 2px 2px 2px rgba(0, 0, 0, 0.548); 
+    transition: all 0.3s ease; 
+}
+::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar
+{
+    border-radius: 10px;
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+.headerViews
+{
+    display:table;
+    width: 100%;
+    min-height: 8vh;
+    max-height: 8vh;
+    color:white;
+    background-color:rgb(224, 17, 95);
+    text-overflow: ellipsis;
+    overflow-y: hidden;
+}
+.headerFont{
+    display:table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size:50px;
+    font-family: 'Bebas Neue', cursive;
+}

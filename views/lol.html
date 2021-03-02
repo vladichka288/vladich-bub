@@ -1,0 +1,41 @@
+<span style="display: inline-block"><button value="prev"></button></span>
+<span style="display: inline-block"><button value="next"></button></span>
+
+
+<body>
+
+        <div style="margin:auto; width:30vw; margin-top:25vh;">
+                <form action="/editList" id="editForm" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="listId" value="{{id}}">
+                        <div><input type="text" class="nameInput" name="name" id="inputName" value="{{name}}"
+                                        maxlength="30" required></div>
+                        <div class="errorName" id="errorNameInput">&nbsp</div>
+                        <div><textarea class="areaDesc" name="description" id="descInput" value="{{desc}}" maxlength=250
+                                        rows='10' cols='30'>la lal al</textarea></div>
+                        <div class="errorName" id="errorDescInput">&nbsp</div>
+                        <input type="submit" id="submit" class="Button" value="EDIT" disabled>
+                </form>
+        </div>
+
+        <div id="jsModal" class="modal">
+                <div class="photo">
+                        <div class="list">
+                                <div class="headCaution">
+                                        <div class="mainCaution">Are you sure ?</div>
+                                        <div class="descCaution">There will be no opportunity to return what was lost
+                                        </div>
+                                </div>
+
+                                <div class="footerButtons">
+                                        <span class="buttons updLol">
+                                                <button class="Button_nice">Ok</button>
+                                        </span>
+                                        <span class="buttons ">
+                                                <button class="Button_nice">Cancel</button>
+                                        </span>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+</body>

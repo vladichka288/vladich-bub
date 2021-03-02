@@ -1,0 +1,47 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MY FIRST SITE</title>
+    <meta name="description" content="MY FIRST SITE DESCRIPTION">
+    <meta name="author" content="MY NAME">
+    <link type="text/css" href="/stylesheets/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link type="text/css" href="/stylesheets/user_entites.css" rel="stylesheet" />
+    <link type="text/css" href="/stylesheets/createNewVideo.css" rel="stylesheet" />
+  
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sarala&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <link type="text/css" href="/stylesheets/createNewVideo.css" rel="stylesheet" />
+  <link href="/stylesheets/normalize.css" rel="stylesheet">
+   <link rel="stylesheet" href="/stylesheets/fontsWeb/css/all.min.css"/>
+    <link rel="stylesheet" href="/stylesheets/myVideos.css"/>
+     <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/head.css"/>
+</head>
+
+
+<body>
+{{>topBar}}
+<div style="margin:auto; width:30vw; margin-top:25vh;">
+    <form action="/editList" id="editForm" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="listId" value="{{id}}">
+        <div><input type="text" class="nameInput" name="name" id="inputName" value="{{name}}" maxlength="30" required></div>
+        <div class="errorName" id="errorNameInput">&nbsp</div>
+        <div><textarea class="areaDesc" name="description" id="descInput" value="{{desc}}" maxlength=250 rows='10'
+                cols='30'>la lal al</textarea></div>
+        <div class="errorName" id="errorDescInput">&nbsp</div>
+        <input type="submit" id="submit" class="Button" value="EDIT" disabled>
+    </form>
+</div>
+    <script src="/javascripts/editPlayList.js"></script>
+    <script src="/javascripts/userPhoto.js"></script>
+</body>

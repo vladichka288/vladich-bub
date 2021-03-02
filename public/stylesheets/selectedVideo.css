@@ -1,0 +1,121 @@
+.nameText{
+    float:left;
+    width:30vw;
+    font-size:45px;
+    max-height: 6vh;
+    
+    font-family: 'Solway', serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+    
+    
+  
+    margin-bottom: 4vh;
+
+}
+.ButtonAdd{
+    height: 4.5vh;
+    width: 15vw;
+    background-color: rgb(214, 182, 123);
+    border-radius: 20px;
+    border: none;
+    font-family: 'Sarala', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.85vh;
+    cursor: pointer;
+}
+.descriptionText{
+    float:left;
+    width:45vw;
+    height:20vh;
+    font-size:15px;
+    font-family: 'Solway', serif;
+    overflow: scroll;
+    overflow-x: hidden;
+    color: white;
+   
+}
+.videoCont{
+    float:left;
+    width:45vw;
+    height:50vh;
+}
+.date{
+    float:left;
+    width:45vw;
+    height:5vh;
+    font-family: 'Solway', serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+    font-size:15px;
+   
+}
+.videoDescription{
+    float:left;
+    width:45vw;
+    height:50vh;
+    margin-bottom: 2vh;
+}
+.authorField{
+    color: white;
+    display: table;
+    width:45vw;
+    height:7vh;
+    font-family: 'Solway', serif;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 2vh;
+}
+.authorPhoto{
+    display: block;
+    float: left;
+    height: 7vh;
+    width:7vh;
+    background-image: url(../images/mainError.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border:2px solid white;
+    margin-right:0.5vw;
+}
+.authorName{
+   height: 70%;
+}
+.authorViews{
+    height: 30%;
+}
+
+.authorPhoto:hover{
+    transform: scale(1.1);
+    box-shadow:2px 2px 2px 2px rgba(0, 0, 0, 0.548); 
+    transition: all 0.3s ease; 
+}
+.mainTaskContainer{
+    margin-top:10vh;
+}
+.videoDescriptionBlock{
+float:left;
+ width:45vw;
+ height:5vh;
+}
+#byrkinafaso
+{
+    display:table; width:50vw; float:left;
+}
+.VideoDate{
+    color:white;
+    float:left; 
+    width:30vw;
+}
+.counViews{
+    color:white;
+    font-family: 'Solway', serif;
+    text-align: center;
+    float:left; width:14vw; cursor:pointer;
+}
+.authorNameVideo{
+    float:left; height:100%
+}

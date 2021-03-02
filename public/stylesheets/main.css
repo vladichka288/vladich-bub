@@ -1,0 +1,261 @@
+            body {
+               background-color:rgb(53, 56, 57)     
+            }         
+            @font-face{
+              font-family: 'lol';
+              src: url(../../../../fonts/OpenSans-LightItalic.ttf);
+    
+          }
+            .videosList {
+              display: flex;
+              flex-direction: column;
+              margin-left: 20%;   
+            }
+
+            
+         
+            
+             .simple_text{
+              font-family: 'Courier New', Courier, monospace;
+              color:white;
+              font-size: 20px;
+              background-color:none;
+              border-radius: 15px;
+             
+            }
+            .menuBar{
+              display: block;
+              width:30vw;  
+              float:left"
+            }
+            
+            .app{
+              display: block;
+                
+              width: 55vw;
+            }
+            .indexText{
+             float:left;
+              width: 50vw;
+          
+            }
+
+           
+            
+            table{margin-top: 5vh;
+             width: 60vw;
+             margin-left: 20vw;
+        
+             
+            }
+
+
+            footer{
+              margin-top: 20vh;
+              width:100vw;
+              
+              border-top-left-radius: 5vw;
+              border-top-right-radius: 5vw;
+              background-color:rgb(152, 143, 143);
+             
+            }
+            
+            hr{
+              border: none; 
+              background-color: white;
+              height: 2px;
+             
+            }
+            footer{
+              padding-bottom: 6vh;
+            }
+           
+            
+            footer div{
+              flex-direction: column;
+              margin-top:15vh; 
+            }
+          
+            .adapt{
+              flex-direction: column;
+              margin-top: 7vh;
+            }
+             .videoDescription{
+              flex-direction: column;
+            
+
+            } 
+
+            .text {
+              font-family: Tahoma, Verdana,  sans-serif;
+              color: white;
+              direction: rtl;
+              letter-spacing: 2.5cm;
+              word-spacing: 1cm;
+              text-indent: 10px;
+              text-decoration: none;
+              text-transform: capitalize;
+              white-space: pre;
+              font-size: 100px;
+              font-weight: bold;
+              line-height: 1.5em;
+              text-align: left;
+              
+              src: url(../../../../fonts/OpenSans-LightItalic.ttf);
+          }
+          .alert {
+            padding: 20px;
+            background-color: #f44336;
+            color: white;
+          }
+          
+          .closebtn {
+            margin-left: 3.5vw;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+          }
+          
+          .closebtn:hover {
+            color: black;
+          }
+
+         .videos_list img {
+           width : 10vw;
+           height: 15vh;
+           
+         }
+         .image :hover {
+           z-index: 999;
+         }
+         .image{
+          border-left-width: 10px;
+          border-left-color: aliceblue;
+         }
+         .name-link div a{
+           letter-spacing: 2px;
+           line-height: 1;
+           word-spacing: 3px;
+           font-family: "Monotype Corsiva" Cursive;
+           color:white;
+          
+         }
+         
+         .name_link >  div:hover{
+          background-color:rgb(53, 56, 57) ;    
+          transition: all 0.3s ease; 
+          color: white;
+         }
+         .name_link >div:hover{background: black;
+          transition: all 0.3s ease; 
+          color: white;  background-color:rgb(53, 56, 57)     }
+          .playListName{
+      
+            font-family: 'Cinzel', serif;
+            font-size: 48px;
+          }
+          .beta_pzdz :hover {
+          z-index: 99999;
+          }
+          .tract {
+            width :10vw;
+            height : 13vh;
+            background-size: cover;
+            border-radius: 1vh;
+          }
+          .tract:hover{
+          
+            transform: translateY(-10px) scale(1.2);;
+            box-shadow:10px 10px 10px rgba(0, 0, 0, 0.548); 
+            transition: all 0.3s ease; 
+          }
+         
+        
+
+.input-container{  display: flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;}
+  .topBar{
+    position: fixed;
+    top:0;
+    width:100vw;
+    height:8vh;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; 
+  
+   background-color:rgb(69, 73, 75);
+  }
+  .userPart{
+    display: block;
+    width:20vw;
+    height: 100%;
+   
+    float:right;
+  }
+  .userPartPhoto{
+    margin-top:1vh;
+    margin-right: 1vw;
+    display: block;
+    float: right;
+    width:6vh;
+    height:6vh;
+    border-radius: 50%;
+    background-image: url(../images/defaultPhoto.jpg); background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+  .userPartName{
+    float: right;
+    display: table;
+    text-align: center;
+    width: 12vw;
+    height:100%;
+    line-height: 1.5vh;
+   
+  }
+  .userPartName1{
+    display: table-cell;
+    vertical-align: middle;;
+    font-family: 'Solway', serif;
+    color: white;
+    max-width:12vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+   
+  }
+  .exitPart{
+    display: table;
+    
+    width:10vw;
+    height: 100%;
+    
+    float:right;
+    text-align: center;
+
+  }
+  .loginPart{
+    display: table;
+    text-align: center;
+    width:5vw;
+    height: 100%;
+   
+    
+    float:right;
+
+  }
+  a{
+    text-decoration: none;
+    color: white
+  }
+  #userPhoto:hover{
+    transform: scale(1.1);
+    box-shadow:2px 2px 2px 2px rgba(0, 0, 0, 0.548); 
+    transition: all 0.3s ease; 
+  }
+          

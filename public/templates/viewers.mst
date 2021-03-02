@@ -1,0 +1,27 @@
+<ul style="display:contents">
+    <li class="viewComponent">
+        <div class="headerViews">
+            <font class="headerFont">{{count}} views</font>
+        </div>
+    </li>
+    {{#Views}}
+    <li class="viewComponent" onclick="window.location.href='/userPage?userId={{id}}'">
+        <div class="mainPa">
+            <div class="viewPart">
+                <span class="viewerPhoto" style="background-image: url({{avaUrl}})">
+
+                </span>
+                <span class="viewerDesc">
+                    <div class="viewerName">
+                        {{fullname}}
+                    </div>
+                    <div class="viewDate">
+                       {{registredAt}}
+                    </div>
+                </span>
+            </div>
+        </div>
+    </li>
+    {{/Views}}
+</ul>
+            

@@ -1,0 +1,84 @@
+<head>
+        <meta charset="utf-8">
+        <title>MY FIRST SITE</title>
+        <meta name="description" content="MY FIRST SITE DESCRIPTION">
+        <meta name="author" content="MY NAME">
+        <link type="text/css" href="/stylesheets/main.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link type="text/css" href="/stylesheets/user_entites.css" rel="stylesheet" />
+        <link type="text/css" href="/stylesheets/createNewVideo.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Quicksand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sarala&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+        <link type="text/css" href="/stylesheets/confirm.css" rel="stylesheet" />
+        <link type="text/css" href="/stylesheets/createNewVideo.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Hammersmith+One|Patua+One&display=swap"
+                rel="stylesheet">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/stylesheets/fontsWeb/css/all.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/stylesheets/myVideos.css" />
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+        <link href="/stylesheets/allvideos.css" rel="stylesheet">
+        <link href="/stylesheets/normalize.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+        <link href="/stylesheets/selectedVideo.css" rel="stylesheet">
+        <link rel="stylesheet" href="/stylesheets/head.css"/>
+        <link rel="stylesheet" href="/stylesheets/head.css"/>
+</head>
+
+<body>
+        {{>topBar}}
+        <div style="margin-top:10vh;">
+                <span style="float:left; width:30vw;">
+                        {{>head}}
+                </span>
+                <span style="float:left; width:60vw;">
+                        <button  class="uploadButton" style="border-radius: 15px; border:none; margin:0;margin-bottom:1.5vh;" onclick="window.location.href='/createPlayList'">Create playlist</button>
+                     
+                              
+                        <div style="float:left;" id="playlistsRender">
+
+                        </div>
+                        <div id="table"style="display:table; margin-left:auto; margin-right:auto;">
+                                <button id="prevButton"  style="margin-top:0vh;dispplay:table-cell;width:5vw; height:3vh;color: black; background: white;font-family: 'Solway', serif;border-radius: 10px; border:none;">prev</button>
+                                <div id="counterPages" style="display:table-cell;width: 5vw;height: 3vh; font-family: 'Noto Sans', sans-serif;color: white;text-align: center;">0/5</div>
+                                <button id="nextButton" style="margin-top:0vh;dispplay:table-cell;width:5vw; height:3vh;color: black; background: white;font-family: 'Solway', serif;border-radius: 10px;border:none;">next</button>
+                        </div>
+                </span>
+
+        </div>
+
+
+        <div class="phon" id="phon">
+                <div id="jsModal" class="modal">
+                        <div class="photo">
+                                <div class="list">
+                                        <div class="headCaution">
+                                                <div class="mainCaution">Are you sure ?</div>
+                                                <div class="descCaution">There will be no opportunity to return what was
+                                                        lost
+                                                </div>
+                                        </div>
+
+                                        <div class="footerButtons">
+                                                <span class="buttons updLol">
+                                                        <button class="Button_nice" id="butConf">Ok</button>
+                                                </span>
+                                                <span class="buttons ">
+                                                        <button class="Button_nice" id="butReject">Cancel</button>
+                                                </span>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        {{>footer}}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+        <script src="/javascripts/userPhoto.js"></script>
+        <script defer src="/javascripts/playlists.js"></script>
+        <script src="/javascripts/delete.js"></script>
+</body>

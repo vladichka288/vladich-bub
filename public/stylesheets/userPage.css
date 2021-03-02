@@ -1,0 +1,101 @@
+.mainSpace{
+    margin-top: 10vh;
+}
+.upd{
+    width:30vw;  float:left;
+}
+.userCard{
+     width:45vw; height:45vh; float:left;margin-top:10vh;
+     background-image: url("/public/images/userPgoto.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.cardPage{
+    float:left;width:50%; height:100%;
+    
+}
+.photoPage{
+    float: left;
+    height:45vh;
+    background-image: url("../images/userPgoto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.descBlock{
+background-color: white;
+}
+
+#cardPageScale:hover{
+    border-radius: 10px;
+    background-color: beige;
+    transform: scale(1.1);
+    box-shadow:10px 10px 10px rgba(0, 0, 0, 0.548); 
+    transition: all 0.3s ease; 
+}
+#descBlockId:hover{
+    border-radius: 10px;
+    transform: scale(1.1);
+    box-shadow:10px 10px 10px 10px rgba(0, 0, 0, 0.548); 
+    transition: all 0.3s ease; 
+}
+.userName{
+    width: 100%;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top:5vh;
+}
+.registradAt{
+    width: 100%;
+    margin-top:1vh;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(165, 153, 153);
+}
+.userField{
+    display: table;
+    height:5vh;
+    display: block;
+    width: 60%;
+    margin-top:5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.roleType{
+    display: table-cell;
+    vertical-align: bottom;
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+.roleValue{
+    display: table-cell;
+    vertical-align: bottom;
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(165, 153, 153);
+}
+.videoField{
+    margin-top:0vh;
+}
+.test {
+    width: 100%;
+    text-align: center;
+}
+.lol{
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(165, 153, 153);
+}
+.mailText{
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(165, 153, 153);
+}

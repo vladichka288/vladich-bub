@@ -1,0 +1,382 @@
+<div>
+<h2>GET /api/v1/me</h2>
+<div>parametrs:none</div>
+<div>result-type : json object (user);</div>
+<div>authorization method: basic authorization;</div>
+<div>possible errors
+<div>401 : Unauthorized</div>
+</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+</div>
+<div>
+<h2>POST /api/v1/registration</h2>
+<div>parametrs:{
+<div>
+<div>req.body.pass</div>
+<div>req.body.confirm_pass</div>
+<div>req.body.login</div>
+}</div>
+</div>
+<div>result-type : json object (user);</div>
+<div>authorization method:absent;</div>
+<div>possible errors {
+<div>403 ,json object</div>
+<div>418 :json object</div>
+}</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+</div>
+<div>
+<h2>GET /api/v1/getUserById/:id</h2>
+<div>parametrs:{
+<div>
+<div>req.params.id</div>
+<div>}</div>
+</div>
+<div>result-type : json object (user);</div>
+<div>authorization method: basic authorization;</div>
+<div>possible errors {
+<div>404 :json object</div>
+<div>500 :json object</div>
+<div>400 :json object</div>
+<div>403 :json object</div>
+}</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+</div>
+<div>
+<h2>GET /api/v1/users</h2>
+<div>parametrs:{
+<div>
+<div>req.query.page</div>
+<div>}</div>
+</div>
+<div>result-type : json object (array of user);</div>
+<div>authorization method: basic authorization;</div>
+<div>possible errors {
+<div>500 :json object</div>
+<div>400 :json object</div>
+<div>403 :json object</div>
+<div>422 :json object</div>
+}</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+</div>
+<div>
+<h2>GET /api/v1/usersByName/:name</h2>
+<div>parametrs:{
+<div>
+<div>req.params.name</div>
+<div>req.query.page</div>
+<div>}</div>
+</div>
+<div>result-type : json object (user);</div>
+<div>authorization method: basic authorization;</div>
+<div>possible errors {
+<div>500 :json object</div>
+<div>403 :json object</div>
+<div>422 :json object</div>
+}</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+</div>
+<div>
+<h2>GET /api/v1/users/:id</h2>
+<div>parametrs:{
+<div>
+<div>req.params.id</div>
+<div>}</div>
+</div>
+<div>result-type : json object (user);</div>
+<div>authorization method: basic authorization;</div>
+<div>possible errors {
+<div>500 :json object</div>
+<div>403 :json object</div>
+<div>400 :json object</div>
+<div>404 :json object</div>
+}</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+</div>
+<div>
+<h2>PUT /api/v1/users/:id</h2>
+<div>parametrs:{
+<div>
+<div>req.params.id</div>
+<div>req.body.newName</div>
+<div>req.files.photo</div>
+<div>}</div>
+</div>
+<div>result-type : json object (state);</div>
+<div>authorization method: basic authorization;</div>
+<div>possible errors {
+<div>500 :json object</div>
+<div>403 :json object</div>
+<div>400 :json object</div>
+<div>404 :json object</div>
+}</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+</div>
+<div>
+<h2>DELETE /api/v1/users/delete/:id</h2>
+<div>parametrs:{
+<div>
+<div>req.params.id</div>
+<div>}</div>
+</div>
+<div>result-type : json object (state);</div>
+<div>authorization method: basic authorization;</div>
+<div>possible errors {
+<div>500 :json object</div>
+<div>403 :json object</div>
+<div>400 :json object</div>
+}</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h2>POST /api/v1/createVideo</h2>
+<div>parametrs:{
+<div>
+<div>req.body.description</div>
+<div>req.body.name</div>
+<div>req.body.authorId</div>
+<div>req.files.imageFile</div>
+<div>req.files.videoFile</div>
+<div>}</div>
+</div>
+<div>result-type : json object (video);</div>
+<div>authorization method: basic authorization;</div>
+<div>possible errors {
+<div>500 :json object</div>
+<div>403 :json object</div>
+<div>404 :json object</div>
+<div>422 :json object</div>
+}</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+</div>
+</div>
+<div>
+<h2>GET /api/v1/getAllVideos</h2>
+<div>parametrs:{
+<div>
+<div>req.query.page</div>
+<div>}</div>
+</div>
+<div>result-type : json object (array of videos);</div>
+<div>authorization method: basic authorization;</div>
+<div>possible errors {
+<div>500 :json object</div>
+<div>404 :json object</div>
+<div>400 :json object</div>
+<div>422 :json object</div>
+}</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>
+<h2>GET /api/v1/videoGetById/:id</h2>
+<div>parametrs:{
+<div>
+<div>req.query.page</div>
+<div>req.params.id</div>
+<div>}</div>
+</div>
+<div>result-type : json object (video);</div>
+<div>authorization method: basic authorization;</div>
+<div>possible errors {
+<div>500 :json object</div>
+<div>404 :json object</div>
+<div>400 :json object</div>
+}</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>
+<h2>GET /api/v1/videosGetByName/:name</h2>
+<div>parametrs:{
+<div>
+<div>req.query.page</div>
+<div>req.params.name</div>
+<div>}</div>
+</div>
+<div>result-type : json object (array of videos);</div>
+<div>authorization method: basic authorization;</div>
+<div>possible errors {
+<div>500 :json object</div>
+<div>404 :json object</div>
+<div>422 :json object</div>
+}</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>
+<h2>PUT /api/v1/updateVideo/:id</h2>
+<div>parametrs:{
+<div>
+<div>req.params.id</div>
+<div>req.body.newName</div>
+<div>req.body.description</div>
+<div>}</div>
+</div>
+<div>result-type : json object (state);</div>
+<div>authorization method: basic authorization;</div>
+<div>possible errors {
+<div>500 :json object</div>
+<div>403 :json object</div>
+<div>404 :json object</div>
+<div>400 :json object</div>
+}</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h2>DELETE /api/v1/videoDeleteById/:id</h2>
+<div>parametrs:{
+<div>
+<div>req.params.id</div>
+<div>}</div>
+</div>
+<div>result-type : json object (status);</div>
+<div>authorization method: basic authorization;</div>
+<div>possible errors {
+<div>500 :json object</div>
+<div>403 :json object</div>
+<div>404 :json object</div>
+}</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+</div>
+</div>
+<div>
+<h2>POST /api/v1/createPlayList</h2>
+<div>parametrs:{
+<div>
+<div>req.body.description</div>
+<div>req.body.name</div>
+<div>}</div>
+</div>
+<div>result-type : json object (playlist);</div>
+<div>authorization method: basic authorization;</div>
+<div>possible errors {
+<div>500 :json object</div>
+<div>422 :json object</div>
+}</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+</div>
+</div>
+<div>
+<h2>GET /api/v1/getPlayListById/:id</h2>
+<div>parametrs:{
+<div>
+<div>req.params.id</div>
+<div>}</div>
+</div>
+<div>result-type : json object (playlist);</div>
+<div>authorization method: basic authorization;</div>
+<div>possible errors {
+<div>500 :json object</div>
+<div>404 :json object</div>
+<div>400 :json object</div>
+}</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+</div>
+</div>
+<div>
+<h2>GET /api/v1/getAllPlaylists</h2>
+<div>parametrs:{
+<div>
+<div>req.query.page</div>
+<div>}</div>
+</div>
+<div>result-type : json object (array of playlists);</div>
+<div>authorization method: basic authorization;</div>
+<div>possible errors {
+<div>500 :json object</div>
+<div>404 :json object</div>
+<div>422 :json object</div>
+<div>400 :json object</div>
+}</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+</div>
+</div>
+<div>
+<h2>GET /api/v1/getPlayListByName/:name</h2>
+<div>parametrs:{
+<div>
+<div>req.query.page</div>
+<div>req.params.name</div>
+<div>}</div>
+</div>
+<div>result-type : json object (array of playlists);</div>
+<div>authorization method: basic authorization;</div>
+<div>possible errors {
+<div>500 :json object</div>
+<div>404 :json object</div>
+<div>422 :json object</div>
+}</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+</div>
+</div>
+<div>
+<h2>PUT /api/v1/updatePlayListById/:id</h2>
+<div>parametrs:{
+<div>
+<div>req.body.newName</div>
+<div>req.body.newDesc</div>
+<div>req.params.id</div>
+<div>}</div>
+</div>
+<div>result-type : json object (playlist);</div>
+<div>authorization method: basic authorization;</div>
+<div>possible errors {
+<div>500 :json object</div>
+<div>404 :json object</div>
+<div>403 :json object</div>
+<div>422 :json object</div>
+}</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+</div>
+</div>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+   <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="/stylesheets/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link type="text/css" href="/stylesheets/user_entites.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/stylesheets/fontsWeb/css/all.min.css"/>
+    <link rel="stylesheet" href="/stylesheets/myVideos.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="/stylesheets/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="/stylesheets/allvideos.css" rel="stylesheet">
+    <link href="/stylesheets/userPage.css" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed|Source+Sans+Pro&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/viewsUsers.css"/>
+    <link rel="stylesheet" href="/stylesheets/head.css"/>
+    <link rel="stylesheet" href="/stylesheets/aboutUs.css"/>
+</head>

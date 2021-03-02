@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" style="height:100%">
+<head>
+        <meta charset="utf-8">
+        <title>MY FIRST SITE</title>
+    <meta name="description" content="MY FIRST SITE DESCRIPTION">
+    <meta name="author" content="MY NAME">
+     <meta charset="utf-8">
+      <link rel="stylesheet" href="/stylesheets/fontsWeb/css/all.min.css"/>
+    <link rel="stylesheet" href="/stylesheets/myVideos.css"/>
+     <link type="text/css" href="/stylesheets/new.css" rel="stylesheet" />
+     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sarala&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="/stylesheets/head.css"/>
+     <!-- Latest compiled and minified CSS -->
+
+</head>
+<body style="height:100%">
+
+    <div class="main">
+        <span class="form-block">
+            <form  action='/auth/login' id="login-form" method='POST' enctype="multipart/form-data">
+                <div class="greeting">
+                    Welcome ...
+                </div>
+                <div class="label">
+                    EMAIL
+                </div>
+                <input type="hidden" name="chatId" value="{{chatId}}">
+                    <input class="inputEmail"  id="inputLogin"  minlength="5" maxlength="20" type='text' name='username' class='form-control' value='' required />
+                    <div class="error" id="errorLoginInput">&nbsp</div>
+                <div class="label label_2 password">
+                    PASSWORD
+                </div>       
+                <input class="inputEmail inputPassword" id="inputPass"type='password' minlength ="8"maxlength="15" name='password'class='form-control' value=''  />              
+                <div class="error" id="errorPassInput">&nbsp</div>
+                    <a href="/">
+                        <div class="label forgot_password">
+                            Forgot password?
+                         </div>
+                    </a>               
+                    <button style="cursor: pointer;" disabled class="Button clickable"id="buttonSubmit" type='submit' class='btn btn-primary'>SIGN IN</button>
+                    
+            </form>
+            <button style="cursor: pointer;" onclick='window.location.href="/auth/google"'   class='btn btn-primary Button clickable'> <i class="fab fa-google-plus-g" style="margin-right:0.5vw;"></i>SIGN IN WITH GOOGLE </button>               
+        </span>
+        <span class="photo-block">
+            <div class="photo_text">
+            New here?
+            </div>
+            <div class="small">
+            Sign up and discover great
+            </div>
+            <div class="small t_2">
+            ammount of new pportunities!
+            </div>
+            <a href="/auth/register">
+                <div class="button clickable">
+                    SIGN UP
+                </div>
+            </a>
+              
+            
+        </span>
+    </div>
+
+
+      <script src ="/javascripts/auth.js"></script>
+      <script src="/javascripts/userPhoto.js"></script>
+</body>
+
+
+ 

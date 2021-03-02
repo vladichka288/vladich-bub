@@ -1,0 +1,43 @@
+.mainError {
+    float: left;
+    width:50vw;
+    height:25vw;
+    margin-top:3vh;
+    background-image: url(../images/mainError.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.uploadButton{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 5px;
+    background-color: white;
+    height: 3.5vh;
+    font-family: 'Solway', serif;
+    
+}
+
+.allVideosPhotoPath{
+    background-image: url(../images/notFound.png);
+    display: block;
+    width:50vw;
+    height:25vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+   
+}
+.mainErrorText{
+    
+    display: none;
+    width:50vw;
+    height:6vh;
+    color:white;
+    font-family: 'Solway', serif;
+    font-size: 30px;
+    text-align: center;
+    line-height: 6vh;
+
+}

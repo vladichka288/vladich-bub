@@ -1,0 +1,128 @@
+.main_users{
+    bottom: 50vh;
+    width: 60vw;
+  }
+  table {
+    
+    border-radius: 25px;
+    font-family: Tahoma, Verdana,  sans-serif;
+    font-size: 25px;
+    color: white;
+  }
+  table th {
+   
+  border-radius: 25px;
+  text-align: center;    
+  padding: 3vw;   
+
+  }
+  table td {
+   
+    border-radius: 25px;
+    text-align: center;
+    padding: 3vw;
+  
+  }
+  table a{
+    color :grey;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+table td:hover{
+  background-color: white;
+  transition: 0.5s;
+  color:black;
+}
+table th:hover{
+  background-color: white;
+  transition: 0.5s;
+  color:black;
+}
+table a:hover{
+
+  transition: 0.5s;
+  font-weight: bold;
+  color:black;
+  
+}
+
+video{
+  border-radius: 1.5vh;
+  width:50vw;
+
+}
+
+
+.user_main{            
+  border-radius: 30px;           
+  border: 3px solid black;
+}
+.user_main > img{
+    
+    width:13vw;
+    height:20vh;  
+    border-radius: 50%;
+    margin-left: 4vw;
+    
+    margin-top: 0px;
+           
+    border: 1px solid black;
+}
+
+ .button_user{
+
+  
+  width:400px;
+  height:100px;
+  border-radius: 30px;
+  background-color: black;
+  color:white;  
+  font-size: 30px;
+  text-align: center;
+  
+          
+ }
+  .container_button{
+  display: flex;
+  flex-direction: column;
+ }
+ 
+ button .active_button{
+   text-align: center;
+  display: none;
+
+ }
+ button:hover .passive_button{
+  
+  display: none;
+  
+ }
+ button:hover .active_button{
+  display: inline;
+  
+ }
+  h1 {font-family: lol;
+     font-weight: bold;
+     font-size: 30px;
+    }
+   
+   
+  .description {
+    letter-spacing: 0.1cm;
+    line-height: 1cm;
+    font-weight: normal;
+    font-size: 50px;
+    border-radius: 15px;
+    
+
+  }
+  .description_section{
+    width: 35vw;          
+  } 
+  .description_section p:hover{
+    background-color: white;
+    color:black;
+    transition: 0.3s;
+  }
+ 
+ 

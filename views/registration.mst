@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" style="height:100%">
+<head>
+        <meta charset="utf-8">
+        <title>MY FIRST SITE</title>
+    <meta name="description" content="MY FIRST SITE DESCRIPTION">
+    <meta name="author" content="MY NAME">
+     <meta charset="utf-8">
+     <link type="text/css" href="/stylesheets/auth.css" rel="stylesheet" />
+     
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sarala&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    
+      <link href="/stylesheets/normalize.css" rel="stylesheet">
+       <link rel="stylesheet" href="/stylesheets/fontsWeb/css/all.min.css"/>
+    <link rel="stylesheet" href="/stylesheets/myVideos.css"/>
+   
+    <link rel="stylesheet" href="/stylesheets/head.css"/>
+   
+     <!-- Latest compiled and minified CSS -->
+
+</head>
+<body style="height:100%">
+    <div class="lol">
+        <div class="lol2">
+            <span class="main_span" style="float:left;">
+                <div class="main_desc">
+                    Watch a lot of Videos <span style="font-family: 'Fjalla One', sans-serif;">FOR FREE</span>
+                </div>
+                <div class="desc">
+                I have been working very hard to create the new version of my site. It comes with a lot  of new features,easy to follow videos and images. Check it out now!
+                </div>
+            </span>
+            <span style ="display:inline-block; margin-left:5vw; height:60vh; margin-top:30vh; " >
+                <div class="head_form">
+                    <span class="head_string">
+                        <div class="head_first_string">
+                            Sign up now
+                        </div>
+                        <div class="head_second_string">
+                            Fill in the form bellow  to get instant access
+                        </div>
+                    </span>
+                    <span class="photo_string">
+                        <img src ="/images/hand-drawn-pencil-icon.svg" style="width:6vw; height:12vh; " >
+                    </span>
+                </div>
+            
+                <form  method="POST" id="formReg"action='/auth/register' class="ours" style="height:44vh;" enctype="multipart/form-data">
+                    
+                    <div >
+                        <input  class="input_nice"type='text' style="font-size:15px" name='userName' id="userName" value='' placeholder="Username"  minlength="5"  maxlength="20" required/>
+                    </div>
+                    <div class="error" id="errorUserNameInput">&nbsp</div>
+                    <div >
+                        <input  class="input_nice  upd"type='text' name='login' id="login" value=''  minlength="5"  maxlength="20" placeholder="Login" required/>
+                    </div>
+                    <div class="error" id="errorLoginInput">&nbsp</div>
+                    <div>  
+                        <input  class="input_nice  upd" type='password'id="pass" name="pass"  value='' minlength="8"  maxlength="15" placeholder="Password" required/>
+                    </div>
+                     <div class="error" id="errorPassInput">&nbsp</div>
+                    <div>
+                        <input  class="input_nice  upd" type='password' id="confirmPass"name="confirm_pass"value='' minlength="5" placeholder="Confirm password"  maxlength="15" required />
+                    </div>
+                     <div class="error" id="errorConfirmPassInput">&nbsp</div>
+                   
+                    <div class ="bottomFAQ" style="display:block">
+                        <button  class="input_nice t_but "  id="butSubmit"  type='submit' class='btn btn-primary'  style="float:left; margin-top:0; width:8.7vw;"  disabled>Sign me up!</button>
+                        <button  class="input_nice t_but clickable"  type='submit' class='btn btn-primary'onclick='window.location.href="/auth/google"'  style="float:left; margin-top:0;width:8.7vw;"  ><i class="fab fa-google-plus-g" style="margin-right:0.5vw;"></i>With Google</button>
+                    </div>                  
+                </form>
+               
+                 
+            </span>
+            
+        </div>
+    </div>
+     <script src ="/javascripts/registration.js"></script>
+     
+</body>
+
+
+ 

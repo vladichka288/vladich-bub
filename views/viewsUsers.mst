@@ -1,0 +1,15 @@
+{{>header}}
+
+<body>
+    <div  class="mainSpace">
+        <span class="menuBar upd">
+            {{>head}}
+        </span>
+        
+        
+
+        
+    </div>
+   
+
+</body>

@@ -1,0 +1,49 @@
+.menu{
+    float: left;
+}
+.menu > ul{
+    justify-content:  center ;
+
+  }
+  .menu > ul  li {
+    list-style-type:  none;             
+  }
+  .clickable:hover{
+    transform: scale(1.1);
+    box-shadow:2px 2px 2px 2px rgba(0, 0, 0, 0.548); 
+    transition: all 0.3s ease; 
+  }
+  .clickable{
+cursor: pointer;
+  }
+  .menu >ul li a {
+  border-radius: 20px;
+  list-style-type:  none;
+  display : block;
+  background-color:rgb(53, 56, 57);
+  padding: 3vh 3vh 1vw 3vh;
+  width: 14vw; 
+  color:white;
+  font-family: lol;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 2cm;
+  }
+  .menu   a:hover {
+   background: white;
+   transition: all 0.7s ease; 
+   color: black;
+   
+   }
+   .menuUl{
+       float: left;
+       width:20vw;
+   }
+   .menuList{
+       float: left;
+        width: 15vw;
+   }
+   .iconMargin{
+       margin-right: 2vw;
+   }

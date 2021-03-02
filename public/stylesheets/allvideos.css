@@ -1,0 +1,36 @@
+.Button{
+    border-radius:5px;
+    color: black;
+    background: white;
+    font-family: 'Noto Sans', sans-serif;
+    width:5vw;
+    height:3vh;
+    display: table-cell
+
+}
+.counter{
+    display: table-cell;
+    width:5vw;
+    height:3vh;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    text-align: center;
+  
+}
+.noPlaylistStyle{
+    display: table-cell;
+    width:50vw;
+    height:50vh;
+    font-size: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+
+}
+.nameForDelete:hover{
+    background-color:rgb(53, 56, 57) ;    
+    transition: all 0.3s ease; 
+    color: white;
+    
+}

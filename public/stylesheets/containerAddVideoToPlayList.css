@@ -1,0 +1,19 @@
+.containerAddVideoToPlayList{
+    margin:auto;
+    width:30vw;
+    margin-top:25vh;
+}
+.selectorAddToPlaylist{
+    margin-bottom: 2vh;
+        font-family: 'Solway', serif;
+        font-size: 25px;
+        border-radius: 5px;
+        width: 30vw;
+        height: 5vh;
+}
+.buttonSet{
+        display: block;
+      margin-left: auto;
+      font-family: 'Solway', serif;
+      margin-right: auto;
+}

@@ -1,0 +1,67 @@
+{{>header}}
+
+<body>
+    <div class="mainSpace">
+
+      
+        <div>
+            <span class="menuBar upd">
+                {{>head}}
+            </span>
+
+            <span class="userCard">
+              <div>
+          
+        </div>
+
+                <span id="cardPageScale" style="background-image:url('{{photoUrl}}')" class="cardPage photoPage ">
+
+                </span>
+                {{#Admin}}
+                <button onclick='window.location.href="/updAdmin?id={{userId}}"'>to admin</button>
+                <button onclick='window.location.href="/updUser?id={{userId}}"'>to user</button>
+                {{/Admin}}
+                {{^Admin}}
+                {{/Admin}}
+                <span id="descBlockId" class="cardPage descBlock">
+                    <div class="userName">
+                        {{name}}
+                    </div>
+                    <div class="registradAt">
+                        {{date}}
+                    </div>
+                    <div class="userField loginField videoField" style="width:100%;margin-top:5vh;">
+                        <span class="roleType video" style="width:100%;">
+                            Role: <font class="mailText">{{role}}</font>
+                        </span>
+                    </div>
+                    <div class="userField loginField videoField" style="width:100%">
+                        <span class="roleType video" style="width:100%; cursor:pointer;"
+                            onclick="window.location.href='/videosAll?userId={{userId}}'">
+                            Videos: <font class="mailText">{{videosCount}}</font>
+                        </span>
+                    </div>
+                    <div class="userField loginField videoField" style="width:100%">
+                        <span class="roleType video" style="width:100%;">
+                            Playlists: <font class="mailText">{{playlistCount}}</font>
+                        </span>
+                    </div>
+                    <div class="userField loginField videoField" style="width:100%;font-family: 'Source Sans Pro', sans-serif;">
+                        {{#subscribe}}
+                       <button class="clickable"style="display: block;display: block;  margin-right: auto; margin-left: auto; border: none;background-color: white;height: 3vh; width: 7vw;border-radius: 5px;  border:2px solid silver" onclick="window.location.href='/subscribeOnUser?userId={{userId}}'"><i class="fas fa-play" style="margin-right:1vw;"></i>Subscribe</button>
+                        {{/subscribe}}
+                        {{^subscribe}}
+                       <button  class="clickable"style="display: block;display: block;  margin-right: auto; margin-left: auto; border: none;background-color: white;height: 3vh; width: 9vw;border-radius: 5px;border:2px solid silver" onclick="window.location.href='/UnsubscribeOnUser?userId={{userId}}'"><i class="fas fa-play" style="margin-right:1vw;"></i>Unsubscribe</button>
+                        {{/subscribe}}
+                    </div>
+
+                </span>
+
+            </span>
+
+        </div>
+
+    </div>
+
+
+</body>

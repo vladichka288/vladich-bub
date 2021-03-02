@@ -1,0 +1,37 @@
+{{#allPlayLists}}
+<div
+    style="float:left; width:60vw;height : 20vh; background-color:white ;border-radius:20px;padding-inline-start: 2vh; margin-bottom : 3vh; ">
+    <span style="float:left; min-width:20vw;max-width:20vw;margin-right:2vw; min-height:22vh;">
+       
+        <div class="playListName" style="cursor:pointer" onclick="window.location.href='/selectedPlayList?playlistId={{id}}'"
+            style="min-height:7vh;display:block;max-height:7vh; overflow: hidden;  text-overflow: ellipsis;  ">
+            {{name}}
+        </div>
+        <div style="display : block;min-height:7vh;max-height:7vh; ">
+            {{description}}
+        </div>
+    </span>
+    <span>
+        <div style="float:inherit;">
+        <form action="/deletePlaylist" class="foreachDeleteForm" method="post"enctype="multipart/form-data" style="float:right; ">
+            <input type="image" id="deleteVideoFormPlayList" src="/images/delete-photo.svg" style="float:right; width:2vw;height:3vh; margin-top:0.5vw;">
+            <input type='hidden'class="playlistIdCLASS" id="deletedPlaylist" name="playlistId" value="{{id}}">
+        </form>
+        <ul style="float:left;margin-top:1.5vw; margin-right:1.5vw;">
+            <a href="/selectedPlayList?playlistId={{id}}" style="cursor: pointer;">
+                {{#Videos}}
+                <li class="videos_list" style="padding-bottom:1vh; display: inline-block; padding-top:1vh;">
+                    <span class="image beta_test"
+                        style="display: inline-block; border:radius:1vw; width:10vw; border-right : 1px solid white; ">
+                        <div class="tract" style="background-image:url({{imageUrl}})"> </div>
+                    </span>
+                </li>
+                {{/Videos}}
+            </a>
+        </ul>
+        </div>
+    </span>
+    
+  
+</div>
+{{/allPlayLists}}

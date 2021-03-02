@@ -1,0 +1,28 @@
+<div class="topBar">
+
+  <span class="exitPart">
+    <div  class="userPartName1 clickable">
+      <a href="/auth/logout">{{menu}}</a>
+    </div>
+  </span>
+  
+
+
+  <span class="userPartName">
+    <span class="userPartName1" onclick="window.location.href='/userPage?userId={{userId}}'">
+   {{userName}}
+    </span>
+  </span>
+    {{#avaUrl}}
+    <span class="userPartPhoto"id="userPhoto" style="background-image:url({{avaUrl}})">
+      {{/avaUrl}}
+      {{^avaUrl}}
+      <span class="userPartPhoto" id="userPhoto">
+        {{/avaUrl}}
+      </span>
+      <form action="/updateUserPhoto" id="uddateUserPhotoForm" method="post"enctype="multipart/form-data" >
+     <input type="file" name="photoFile" accept ="image/jpeg,image/png,image/jpg" id="lol"style="display: none" />
+      </form>
+
+
+</div>

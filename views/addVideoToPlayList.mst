@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>MY FIRST SITE</title>
+  <meta name="description" content="MY FIRST SITE DESCRIPTION">
+  <meta name="author" content="MY NAME">
+  <link type="text/css" href="/stylesheets/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link type="text/css" href="/stylesheets/user_entites.css" rel="stylesheet" />
+  <link type="text/css" href="/stylesheets/createNewVideo.css" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sarala&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+  <link type="text/css" href="/stylesheets/createNewVideo.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/myVideos.css" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link href="/stylesheets/allvideos.css" rel="stylesheet">
+  <link href="/stylesheets/normalize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+  <link href="/stylesheets/selectedVideo.css" rel="stylesheet">
+<link href="/stylesheets/containerAddVideoToPlayList.css" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/head.css"/>
+</head>
+
+<body>
+  {{>topBar}}
+  <div class="containerAddVideoToPlayList">
+    <form action="/insertVideoToPlayList" id="insertVideoForm" method="post" enctype="multipart/form-data">
+      <select class="selectorAddToPlaylist" id="selector" >
+        {{#playlists}}
+        <option value="{{.}}">{{.}}</option>
+        {{/playlists}}
+      </select>
+      <input id="selectedPlaylist" type="hidden" name="name">
+      <input type="hidden" name="videoId" value="{{id}}">
+      <input type="submit" class="ButtonAdd buttonSet" id="submit" \ value="OK">
+    </form>
+  </div>
+  <script src="/javascripts/userPhoto.js"></script>
+  <script src="/javascripts/insertVideoToPlayList.js"></script>
+</body>
